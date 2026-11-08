@@ -141,9 +141,9 @@ export const INITIAL_CMS_DATA: CMSData = {
   profile: {
     fullName: 'Shahib Jarif Chowdhury',
     tagline: 'AI Student | Developer',
-    bio: 'Passionate computer science undergraduate focusing on modern web technologies, computational problem solving, and building responsive digital products.',
+    bio: 'Information Technology student majoring in Artificial Intelligence at Macquarie University, exploring software engineering, intelligent systems and modern web development.',
     district: 'Sydney',
-    profilePicture: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
+    profilePicture: '',
     email: '',
     phone: '',
     address: 'Sydney, Australia',
@@ -168,7 +168,7 @@ export const INITIAL_CMS_DATA: CMSData = {
       {
         id: 'soc-1',
         platform: 'GitHub',
-        url: 'https://github.com',
+        url: 'https://github.com/0xshahib',
       },
       {
         id: 'soc-2',
@@ -199,7 +199,7 @@ export const INITIAL_CMS_DATA: CMSData = {
     {
       id: 'plat-1',
       name: 'GitHub',
-      handle: '@NEXORA',
+      handle: '@0xshahib',
       description: 'Open source contributions, algorithms, web development projects, and repositories.',
       url: 'https://github.com',
       pictureUrl: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=400&q=80',
@@ -212,7 +212,7 @@ export const INITIAL_CMS_DATA: CMSData = {
     {
       id: 'plat-2',
       name: 'LinkedIn',
-      handle: 'NEXORA',
+      handle: '',
       description: 'Professional networking, CSE academic milestones, and engineering career updates.',
       url: 'https://linkedin.com',
       pictureUrl: 'https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=400&q=80',
@@ -225,7 +225,7 @@ export const INITIAL_CMS_DATA: CMSData = {
     {
       id: 'plat-3',
       name: 'Facebook',
-      handle: 'NEXORA Official',
+      handle: '',
       description: 'Personal social updates, student community discussions, and direct messages.',
       url: 'https://facebook.com',
       pictureUrl: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=400&q=80',
@@ -238,7 +238,7 @@ export const INITIAL_CMS_DATA: CMSData = {
     {
       id: 'plat-4',
       name: 'Instagram',
-      handle: '@nexora.dev',
+      handle: '',
       description: 'Behind the scenes, developer workspace snapshots, and student life moments.',
       url: 'https://instagram.com',
       pictureUrl: 'https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=400&q=80',

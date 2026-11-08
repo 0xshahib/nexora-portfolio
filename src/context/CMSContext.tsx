@@ -227,7 +227,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       // Backend not running (e.g. Vercel static deployment)
     }
 
-    // Local fallback for static hosting
+    // Public portfolio can render seed content without a backend; never restore stale auth settings.
     try {
       const saved = localStorage.getItem(AUTH_SETTINGS_KEY);
       if (saved) {
@@ -246,6 +246,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         headers: {
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
+          ...(sessionStorage.getItem(AUTH_TOKEN_KEY) ? { Authorization: `Bearer ${sessionStorage.getItem(AUTH_TOKEN_KEY)}` } : {}),
         },
       });
       const contentType = res.headers.get('content-type') || '';
