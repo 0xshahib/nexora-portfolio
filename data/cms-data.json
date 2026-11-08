@@ -1,0 +1,267 @@
+{
+  "siteSettings": {
+    "brandName": "NEXORA",
+    "logoUrl": "",
+    "logoHeight": 36,
+    "faviconUrl": "",
+    "heroLayout": "imageRight",
+    "profileImageShape": "rounded",
+    "enable3D": true,
+    "threeStyle": "torus",
+    "skillsDisplayStyle": "cards",
+    "navItems": [
+      {
+        "id": "nav-1",
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "id": "nav-2",
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "id": "nav-3",
+        "label": "Education",
+        "href": "#education"
+      },
+      {
+        "id": "nav-4",
+        "label": "Skills",
+        "href": "#skills"
+      },
+      {
+        "id": "nav-socials",
+        "label": "Social Media",
+        "href": "#socials"
+      },
+      {
+        "id": "nav-5",
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "theme": {
+      "primaryColor": "#059669",
+      "secondaryColor": "#10b981",
+      "accentColor": "#14b8a6",
+      "lightMode": {
+        "background": "#f7faf7",
+        "surface": "#ffffff",
+        "text": "#132a1e",
+        "mutedText": "#4b6354",
+        "border": "#dce7df"
+      },
+      "darkMode": {
+        "background": "#0a140f",
+        "surface": "#11221a",
+        "text": "#ecfdf5",
+        "mutedText": "#6ee7b7",
+        "border": "#1f3b2d"
+      },
+      "presetName": "Eco"
+    },
+    "socialsPageSettings": {
+      "title": "Social Profiles & Connect",
+      "subtitle": "Connect with me across all official platforms, coding repositories, and social channels.",
+      "layout": "grid"
+    },
+    "sectionsVisibility": {
+      "hero": true,
+      "about": true,
+      "education": true,
+      "skills": true,
+      "languages": true,
+      "socials": true,
+      "contact": true
+    }
+  },
+  "profile": {
+    "fullName": "Shahib Jarif Chowdhury",
+    "tagline": "AI Student | Developer",
+    "bio": "Information Technology student majoring in Artificial Intelligence at Macquarie University, exploring software engineering, intelligent systems and modern web development.",
+    "district": "Sydney",
+    "profilePicture": "",
+    "email": "",
+    "phone": "",
+    "address": "Sydney, Australia",
+    "currentRole": "Information Technology Student — Artificial Intelligence",
+    "ctaButtons": [
+      {
+        "id": "cta-1",
+        "label": "Contact Me",
+        "href": "#contact",
+        "variant": "primary",
+        "openNewTab": false
+      },
+      {
+        "id": "cta-2",
+        "label": "View Education",
+        "href": "#education",
+        "variant": "outline",
+        "openNewTab": false
+      }
+    ],
+    "socialLinks": [
+      {
+        "id": "soc-1",
+        "platform": "GitHub",
+        "url": "https://github.com/0xshahib"
+      }
+    ]
+  },
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "Macquarie University",
+      "degree": "Bachelor of Information Technology — Artificial Intelligence",
+      "level": "Bachelor",
+      "passingYear": "Ongoing",
+      "details": "Studying information technology with a major in artificial intelligence.",
+      "order": 1
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-1",
+      "name": "C",
+      "category": "Programming Language",
+      "proficiency": 85,
+      "order": 1
+    },
+    {
+      "id": "skill-2",
+      "name": "C++",
+      "category": "Programming Language",
+      "proficiency": 80,
+      "order": 2
+    },
+    {
+      "id": "skill-3",
+      "name": "Python",
+      "category": "Programming Language",
+      "proficiency": 85,
+      "order": 3
+    },
+    {
+      "id": "skill-4",
+      "name": "HTML",
+      "category": "Web Development",
+      "proficiency": 95,
+      "order": 4
+    },
+    {
+      "id": "skill-5",
+      "name": "CSS",
+      "category": "Web Development",
+      "proficiency": 90,
+      "order": 5
+    }
+  ],
+  "languages": [
+    {
+      "id": "lang-1",
+      "name": "Bengali",
+      "proficiency": "Native",
+      "order": 1
+    },
+    {
+      "id": "lang-2",
+      "name": "English",
+      "proficiency": "Professional Working",
+      "order": 2
+    }
+  ],
+  "socialPlatforms": [
+    {
+      "id": "plat-1",
+      "name": "GitHub",
+      "handle": "@0xshahib",
+      "description": "Open source contributions, algorithms, web development projects, and repositories.",
+      "url": "https://github.com/0xshahib",
+      "pictureUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=400&q=80",
+      "buttonLabel": "View GitHub",
+      "badge": "Code Base",
+      "category": "Coding",
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "id": "plat-2",
+      "name": "LinkedIn",
+      "handle": "",
+      "description": "Professional networking, CSE academic milestones, and engineering career updates.",
+      "url": "",
+      "pictureUrl": "https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=400&q=80",
+      "buttonLabel": "Connect on LinkedIn",
+      "badge": "Professional",
+      "category": "Career",
+      "order": 2,
+      "enabled": false
+    },
+    {
+      "id": "plat-3",
+      "name": "Facebook",
+      "handle": "",
+      "description": "Personal social updates, student community discussions, and direct messages.",
+      "url": "",
+      "pictureUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=400&q=80",
+      "buttonLabel": "Visit Facebook",
+      "badge": "Community",
+      "category": "Social",
+      "order": 3,
+      "enabled": false
+    },
+    {
+      "id": "plat-4",
+      "name": "Instagram",
+      "handle": "",
+      "description": "Behind the scenes, developer workspace snapshots, and student life moments.",
+      "url": "",
+      "pictureUrl": "https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=400&q=80",
+      "buttonLabel": "Follow on Instagram",
+      "badge": "Visuals",
+      "category": "Social",
+      "order": 4,
+      "enabled": false
+    },
+    {
+      "id": "plat-5",
+      "name": "YouTube",
+      "handle": "",
+      "description": "Tech experiments, project demos, coding tutorials, and walkthroughs.",
+      "url": "",
+      "pictureUrl": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=400&q=80",
+      "buttonLabel": "Watch Channel",
+      "badge": "Media",
+      "category": "Media",
+      "order": 5,
+      "enabled": false
+    },
+    {
+      "id": "plat-6",
+      "name": "X / Twitter",
+      "handle": "",
+      "description": "Real-time tech thoughts, tech news, web development tips, and discussions.",
+      "url": "",
+      "pictureUrl": "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=400&q=80",
+      "buttonLabel": "Follow on X",
+      "badge": "Feed",
+      "category": "Social",
+      "order": 6,
+      "enabled": false
+    }
+  ],
+  "adminAuthSettings": {
+    "adminEmail": "",
+    "adminPassword": "",
+    "googleAuthEnabled": false,
+    "authorizedGoogleEmails": []
+  },
+  "contactSubmissions": [],
+  "mediaLibrary": [],
+  "footer": {
+    "copyrightText": "© {year} NEXORA. All rights reserved.",
+    "tagline": "Crafted with precision & CMS control"
+  }
+}
