@@ -1,6 +1,27 @@
 import { CMSData, SiteTheme } from './types';
 
 export const THEME_PRESETS: Record<string, SiteTheme> = {
+  // Signature NEXORA palette: acid-lime contrast over a near-black canvas.
+  nexora: {
+    'primaryColor': '#b8ff45',
+    'secondaryColor': '#46f6c6',
+    'accentColor': '#b8ff45',
+    'lightMode': {
+        'background': '#f4f6ee',
+        'surface': '#ffffff',
+        'text': '#121a13',
+        'mutedText': '#59665a',
+        'border': '#d9e3d3'
+    },
+    'darkMode': {
+        'background': '#080d0b',
+        'surface': '#101914',
+        'text': '#f4fff4',
+        'mutedText': '#a4b6a6',
+        'border': '#26392d'
+    },
+    'presetName': 'NEXORA After Dark'
+},
   ocean: {
     primaryColor: '#2563eb',
     secondaryColor: '#0ea5e9',
@@ -122,7 +143,7 @@ export const INITIAL_CMS_DATA: CMSData = {
       { id: 'nav-socials', label: 'Social Media', href: '#socials' },
       { id: 'nav-5', label: 'Contact', href: '#contact' },
     ],
-    theme: THEME_PRESETS.eco,
+    theme: THEME_PRESETS.nexora,
     socialsPageSettings: {
       title: 'Social Profiles & Connect',
       subtitle: 'Connect with me across all official platforms, coding repositories, and social channels.',
@@ -140,7 +161,7 @@ export const INITIAL_CMS_DATA: CMSData = {
   },
   profile: {
     fullName: 'Shahib Jarif Chowdhury',
-    tagline: 'AI Student | Developer',
+    tagline: 'AI ENGINEER IN THE MAKING // CREATIVE CODE REBEL',
     bio: 'Information Technology student majoring in Artificial Intelligence at Macquarie University, exploring software engineering, intelligent systems and modern web development.',
     district: 'Sydney',
     profilePicture: '',
@@ -151,14 +172,14 @@ export const INITIAL_CMS_DATA: CMSData = {
     ctaButtons: [
       {
         id: 'cta-1',
-        label: 'Contact Me',
+        label: 'LET’S TALK IDEAS',
         href: '#contact',
         variant: 'primary',
         openNewTab: false,
       },
       {
         id: 'cta-2',
-        label: 'View Education',
+        label: 'THE BACKSTORY',
         href: '#education',
         variant: 'outline',
         openNewTab: false,
@@ -281,6 +302,6 @@ export const INITIAL_CMS_DATA: CMSData = {
   mediaLibrary: [],
   footer: {
     copyrightText: '© {year} NEXORA. All rights reserved.',
-    tagline: 'Crafted with precision & CMS control',
+    tagline: 'Built different. Still building.',
   },
 };

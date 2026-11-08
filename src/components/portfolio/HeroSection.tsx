@@ -67,7 +67,7 @@ export const HeroSection: React.FC = () => {
             border: `3px solid var(--color-border)`,
           }}
         >
-          {profile.fullName ? profile.fullName.charAt(0) : 'R'}
+          {profile.fullName ? profile.fullName.charAt(0) : 'N'}
         </div>
       )}
     </motion.div>
@@ -111,7 +111,7 @@ export const HeroSection: React.FC = () => {
         viewport={defaultViewport}
         transition={{ duration: 0.55, ease: customEase, delay: 0.05 }}
       >
-        {profile.fullName}
+        <>NOT HERE TO<br /><span style={{ color: 'var(--color-primary)' }}>BLEND IN.</span></>
       </motion.h1>
 
       <motion.p
@@ -123,9 +123,10 @@ export const HeroSection: React.FC = () => {
         viewport={defaultViewport}
         transition={{ duration: 0.55, ease: customEase, delay: 0.1 }}
       >
-        {profile.tagline}
+        {profile.tagline} <span className="block mt-3 text-sm tracking-wide" style={{ color: 'var(--color-muted)' }}>I'm {profile.fullName}. I build things with brains, bold ideas, and a little bit of chaos.</span>
       </motion.p>
 
+      {/* Editorial copy stays visible while CMS still controls the calls to action. */}
       {/* CTA Buttons with staggered animation */}
       {profile.ctaButtons && profile.ctaButtons.length > 0 && (
         <motion.div

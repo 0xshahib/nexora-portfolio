@@ -42,24 +42,24 @@
       }
     ],
     "theme": {
-      "primaryColor": "#059669",
-      "secondaryColor": "#10b981",
-      "accentColor": "#14b8a6",
+      "primaryColor": "#b8ff45",
+      "secondaryColor": "#46f6c6",
+      "accentColor": "#b8ff45",
       "lightMode": {
-        "background": "#f7faf7",
+        "background": "#f4f6ee",
         "surface": "#ffffff",
-        "text": "#132a1e",
-        "mutedText": "#4b6354",
-        "border": "#dce7df"
+        "text": "#121a13",
+        "mutedText": "#59665a",
+        "border": "#d9e3d3"
       },
       "darkMode": {
-        "background": "#0a140f",
-        "surface": "#11221a",
-        "text": "#ecfdf5",
-        "mutedText": "#6ee7b7",
-        "border": "#1f3b2d"
+        "background": "#080d0b",
+        "surface": "#101914",
+        "text": "#f4fff4",
+        "mutedText": "#a4b6a6",
+        "border": "#26392d"
       },
-      "presetName": "Eco"
+      "presetName": "NEXORA After Dark"
     },
     "socialsPageSettings": {
       "title": "Social Profiles & Connect",
@@ -78,7 +78,7 @@
   },
   "profile": {
     "fullName": "Shahib Jarif Chowdhury",
-    "tagline": "AI Student | Developer",
+    "tagline": "AI ENGINEER IN THE MAKING // CREATIVE CODE REBEL",
     "bio": "Information Technology student majoring in Artificial Intelligence at Macquarie University, exploring software engineering, intelligent systems and modern web development.",
     "district": "Sydney",
     "profilePicture": "",
@@ -89,14 +89,14 @@
     "ctaButtons": [
       {
         "id": "cta-1",
-        "label": "Contact Me",
+        "label": "LET’S TALK IDEAS",
         "href": "#contact",
         "variant": "primary",
         "openNewTab": false
       },
       {
         "id": "cta-2",
-        "label": "View Education",
+        "label": "THE BACKSTORY",
         "href": "#education",
         "variant": "outline",
         "openNewTab": false
@@ -262,6 +262,6 @@
   "mediaLibrary": [],
   "footer": {
     "copyrightText": "© {year} NEXORA. All rights reserved.",
-    "tagline": "Crafted with precision & CMS control"
+    "tagline": "Built different. Still building."
   }
 }
