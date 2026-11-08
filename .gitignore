@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Keep local CMS state and authentication material out of version control.
+data/admin-auth.json
+data/auth-lockout.json
+data/submissions.json
