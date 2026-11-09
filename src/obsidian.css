@@ -1,0 +1,159 @@
+/* NEXORA / Obsidian Silver — public portfolio design.
+ * Mirrors the user-approved preview without editing the original PNG.
+ * Scope styles to the public portfolio to avoid disrupting admin controls.
+ */
+#portfolio-view-container {
+  --nexora-bg:#0b0e12; --nexora-grid:rgba(210,220,230,.06);
+  --nexora-accent:#c9d9e8; --nexora-text:#f5f8fc;
+  --nexora-muted:#aeb7bc; --nexora-border:#3b454d;
+  background:radial-gradient(ellipse at 75% 26%,rgba(103,127,151,.16),transparent 45%),
+    radial-gradient(ellipse at 8% 85%,rgba(100,94,130,.11),transparent 50%),var(--nexora-bg);
+  color:var(--nexora-text);
+  position:relative;isolation:isolate;overflow:hidden;
+}
+#portfolio-view-container::before {
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(var(--nexora-grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--nexora-grid) 1px,transparent 1px);
+  background-size:74px 74px;
+}
+#portfolio-view-container::after {
+  content:"";position:absolute;z-index:-1;left:20%;right:-15%;top:380px;height:530px;
+  border:1px solid rgba(201,217,232,.25);border-radius:50%;transform:rotate(-12deg);
+  box-shadow:0 0 110px rgba(201,217,232,.07);pointer-events:none;
+}
+#portfolio-view-container .nexora-header {
+  position:sticky;top:0;z-index:40;height:84px;padding:0 clamp(20px,5vw,68px);
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  background:rgba(11,14,18,.87);border-bottom:1px solid var(--nexora-border);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+}
+#portfolio-view-container .nexora-brand {
+  text-decoration:none;white-space:nowrap;color:var(--nexora-text);
+  font-weight:900;letter-spacing:-1.5px;font-size:27px;line-height:1;
+}
+#portfolio-view-container .nexora-star { color:var(--nexora-accent);margin-left:2px; }
+#portfolio-view-container .nexora-nav {display:flex;align-items:center;gap:35px;}
+#portfolio-view-container .nexora-nav a,
+#portfolio-view-container .nexora-mobile-nav a {
+  font-size:11px;font-weight:750;letter-spacing:.16em;text-transform:uppercase;
+  text-decoration:none;color:var(--nexora-muted);transition:color .2s ease;
+}
+#portfolio-view-container .nexora-nav a:hover,
+#portfolio-view-container .nexora-mobile-nav a:hover {color:var(--nexora-text);}
+#portfolio-view-container .nexora-header-actions {display:flex;gap:12px;align-items:center;}
+#portfolio-view-container .nexora-online {
+  border:1px solid var(--nexora-border);border-radius:30px;
+  color:var(--nexora-accent);padding:10px 16px;font-size:11px;font-weight:750;
+  white-space:nowrap;
+}
+#portfolio-view-container .nexora-menu-toggle {
+  display:none;background:transparent;border:1px solid var(--nexora-border);
+  color:var(--nexora-text);border-radius:10px;padding:9px;cursor:pointer;
+}
+#portfolio-view-container .nexora-mobile-nav {
+  position:absolute;top:100%;left:0;right:0;background:#11151d;
+  border-bottom:1px solid var(--nexora-border);padding:16px 24px;
+  display:flex;flex-direction:column;gap:18px;
+}
+#portfolio-view-container .nexora-hero {
+  position:relative;isolation:isolate;min-height:650px;
+  padding:40px clamp(20px,5vw,68px) 35px;
+}
+#portfolio-view-container .nexora-hero-content {max-width:1650px;margin:0 auto;}
+#portfolio-view-container .nexora-eyebrow {
+  font-size:11px;letter-spacing:.3em;color:var(--nexora-muted);
+}
+#portfolio-view-container .nexora-hero-grid {
+  min-height:465px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);
+  align-items:center;gap:35px;
+}
+#portfolio-view-container .nexora-location {
+  display:inline-block;border:1px solid var(--nexora-border);
+  background:rgba(201,217,232,.08);padding:12px 17px;border-radius:50px;
+  color:var(--nexora-accent);font-size:10px;font-weight:850;
+  letter-spacing:.16em;margin:22px 0;
+}
+#portfolio-view-container .nexora-headline {
+  font-size:clamp(46px,5.6vw,89px);line-height:.99;letter-spacing:-.065em;
+  font-weight:950;margin:0 0 26px;color:var(--nexora-text);text-wrap:balance;
+}
+#portfolio-view-container .nexora-headline span {color:var(--nexora-accent);}
+#portfolio-view-container .nexora-tagline {
+  font-size:clamp(12px,1.3vw,17px);font-weight:800;letter-spacing:.07em;
+  color:var(--nexora-text);text-transform:uppercase;margin:0 0 15px;
+}
+#portfolio-view-container .nexora-description {
+  color:var(--nexora-muted);font-size:15px;line-height:1.8;max-width:480px;
+}
+#portfolio-view-container .nexora-cta-row {
+  display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;
+}
+#portfolio-view-container .nexora-cta {
+  display:inline-flex;align-items:center;justify-content:center;
+  border-radius:28px;padding:17px 23px;border:1px solid var(--nexora-border);
+  font-weight:850;font-size:11px;letter-spacing:.06em;background:transparent;
+  color:var(--nexora-text);text-decoration:none;transition:transform .2s,box-shadow .2s;
+}
+#portfolio-view-container .nexora-cta:hover {transform:translateY(-3px);}
+#portfolio-view-container .nexora-cta.primary {
+  background:var(--nexora-accent);color:#0b1210;border-color:var(--nexora-accent);
+  box-shadow:0 6px 35px rgba(201,217,232,.15);
+}
+#portfolio-view-container .nexora-photo-area {
+  display:flex;justify-content:center;align-items:center;min-height:425px;
+}
+#portfolio-view-container .nexora-blob-shell {
+  position:relative;width:min(37vw,420px);height:min(37vw,420px);
+  min-width:275px;min-height:275px;
+  filter:drop-shadow(0 0 30px rgba(201,217,232,.33));
+}
+#portfolio-view-container .nexora-blob-border,
+#portfolio-view-container .nexora-photo-mask {
+  position:absolute;border-radius:42% 58% 63% 37% / 49% 35% 65% 51%;
+  animation:nexora-obsidian-morph 8s ease-in-out infinite alternate;
+}
+#portfolio-view-container .nexora-blob-border {
+  inset:-4px;background:var(--nexora-accent);
+}
+#portfolio-view-container .nexora-photo-mask {
+  inset:0;overflow:hidden;background:#6250a2;
+}
+#portfolio-view-container .nexora-photo-mask img {
+  display:block;width:100%;height:100%;object-fit:cover;object-position:50% 43%;
+  transform:scale(1.05); /* Display crop only; the PNG file stays pixel-for-pixel intact. */
+}
+#portfolio-view-container .nexora-blob-outer {
+  position:absolute;inset:-19px;border:1px solid rgba(201,217,232,.23);
+  border-radius:46% 54% 55% 45% / 48% 60% 40% 52%;
+  animation:nexora-obsidian-morph 10s ease-in-out infinite alternate-reverse;
+}
+#portfolio-view-container .nexora-hero-3d {
+  position:absolute;inset:0;z-index:-1;opacity:.16;pointer-events:none;
+}
+#portfolio-view-container .nexora-hero-foot {
+  margin-top:20px;padding-top:26px;border-top:1px solid var(--nexora-border);
+  display:flex;justify-content:space-between;gap:10px;font-size:10px;
+  letter-spacing:.17em;color:var(--nexora-muted);
+}
+#portfolio-view-container .nexora-hero-foot span:last-child {color:var(--nexora-accent);}
+@keyframes nexora-obsidian-morph {
+  from{border-radius:42% 58% 63% 37% / 49% 35% 65% 51%}
+  to{border-radius:61% 39% 38% 62% / 43% 61% 39% 57%}
+}
+@media(max-width:790px) {
+  #portfolio-view-container .nexora-header{height:70px;}
+  #portfolio-view-container .nexora-nav{display:none;}
+  #portfolio-view-container .nexora-menu-toggle{display:inline-flex;}
+  #portfolio-view-container .nexora-hero-grid{grid-template-columns:1fr;gap:15px;}
+  #portfolio-view-container .nexora-photo-area{grid-row:1;min-height:300px;}
+  #portfolio-view-container .nexora-blob-shell{width:260px;height:260px;min-width:0;min-height:0;}
+  #portfolio-view-container .nexora-hero{padding-top:23px;min-height:0;}
+  #portfolio-view-container .nexora-headline{font-size:clamp(45px,10vw,65px);}
+  #portfolio-view-container .nexora-hero-foot{font-size:9px;flex-wrap:wrap;}
+}
+@media(prefers-reduced-motion:reduce){
+  #portfolio-view-container .nexora-photo-mask,
+  #portfolio-view-container .nexora-blob-border,
+  #portfolio-view-container .nexora-blob-outer {animation:none;}
+}

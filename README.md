@@ -51,3 +51,7 @@ Edit the portfolio details in `src/defaultData.ts` and `data/cms-data.json`. The
 
 ## Attribution
 Derived from the publicly accessible [RezZone-Protfolio](https://github.com/rejonehossenriazcse/RezZone-Protfolio) source. No license file was present in the inspected repository; public visibility does not by itself grant a reuse license. Obtain permission from the original author if needed.
+
+## Obsidian Silver visual theme
+
+The approved Obsidian Silver portfolio hero is implemented in `src/components/portfolio/HeroSection.tsx` and `src/obsidian.css`. The exact user-approved PNG is stored **without pixel edits** at `public/images/nexora-portrait.png` (SHA-256 `39532db84acd5bcb5234adc96e6da6c975971933c96a60912e2da6a43062f50a`). The animated CSS blob changes only its display mask, not the image bytes. Theme settings and default navigation are mirrored in `src/defaultData.ts` and `data/cms-data.json`. The remaining portfolio sections and admin dashboard are retained. The public design defaults to dark mode. The website has not been visually verified in a browser as part of this change.

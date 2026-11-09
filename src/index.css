@@ -38,28 +38,4 @@ body {
   background: var(--color-muted);
 }
 
-/* NEXORA / After Dark: an editorial, high-contrast design language.
-   These styles enhance the public portfolio without changing CMS controls. */
-html { scroll-behavior: smooth; }
-body { background-image: radial-gradient(ellipse 65% 42% at 90% 5%, color-mix(in srgb, var(--color-primary) 12%, transparent), transparent 75%); }
-::selection { background: #b8ff45; color: #09100b; }
-#site-header { border-bottom-color: color-mix(in srgb, var(--color-primary) 20%, var(--color-border)) !important; }
-#header-brand-text { font-size: 1.4rem; font-weight: 950; letter-spacing: -0.09em; color: var(--color-text) !important; }
-#header-brand-text::after { content: '✳'; font-size: .65em; color: var(--color-primary); vertical-align: top; margin-left: .15em; }
-#desktop-nav a { letter-spacing: .055em; text-transform: uppercase; font-size: .69rem; font-weight: 800; }
-#home { isolation: isolate; }
-#home::before { content: 'N / 001'; position: absolute; left: max(24px, calc((100vw - 1152px) / 2)); top: 1.8rem; color: var(--color-muted); letter-spacing: .3em; font-size: .64rem; font-weight: 800; opacity: .7; }
-#home::after { content: ''; position: absolute; inset: 0; z-index: -2; opacity: .23; pointer-events: none; background-image: linear-gradient(to right, var(--color-border) 1px, transparent 1px), linear-gradient(to bottom, var(--color-border) 1px, transparent 1px); background-size: 78px 78px; mask-image: linear-gradient(to bottom, black, transparent 90%); }
-#hero-headline { font-size: clamp(3.5rem, 7.4vw, 7.3rem); letter-spacing: -.085em; line-height: .94; font-weight: 950; text-wrap: balance; }
-#hero-tagline { max-width: 34rem; letter-spacing: -.025em; }
-#hero-location-badge { letter-spacing: .17em; }
-#hero-cta-group a { border-radius: 999px !important; padding: .95rem 1.65rem !important; font-size: .73rem !important; font-weight: 850 !important; letter-spacing: .08em; text-transform: uppercase; }
-#hero-cta-group a:first-child { box-shadow: 0 12px 48px color-mix(in srgb, var(--color-primary) 25%, transparent); }
-#hero-cta-group a:hover { transform: translateY(-4px) !important; }
-#hero-image-wrapper { min-height: 330px; }
-#hero-profile-placeholder { width: min(72vw, 350px) !important; height: min(72vw, 350px) !important; border-radius: 36% 64% 65% 35% / 40% 45% 55% 60% !important; border: 1px solid color-mix(in srgb, var(--color-primary) 40%, var(--color-border)) !important; background: radial-gradient(circle at 25% 20%, color-mix(in srgb, var(--color-primary) 40%, var(--color-surface)), var(--color-surface) 70%) !important; font-size: 7rem !important; font-weight: 950 !important; letter-spacing: -.1em; box-shadow: 0 0 110px color-mix(in srgb, var(--color-primary) 18%, transparent), inset 0 0 55px color-mix(in srgb, var(--color-primary) 8%, transparent); animation: nexora-morph 10s ease-in-out infinite alternate; }
-#site-footer { position: relative; }
-#site-footer::before { content: 'BUILD LOUD. THINK DIFFERENT.'; display: block; text-align: center; font-weight: 950; letter-spacing: -.055em; font-size: clamp(1.5rem, 5vw, 4.5rem); color: var(--color-text); opacity: .13; margin: 0 auto 2rem; }
-@keyframes nexora-morph { 0% { border-radius: 36% 64% 65% 35% / 40% 45% 55% 60%; transform: rotate(-6deg); } 100% { border-radius: 60% 40% 38% 62% / 55% 58% 42% 45%; transform: rotate(6deg); } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } #hero-profile-placeholder { animation: none; } }
-@media (max-width: 768px) { #home::before { top: 1rem; } #hero-image-wrapper { min-height: 230px; } #hero-profile-placeholder { width: 210px !important; height: 210px !important; font-size: 5rem !important; } #hero-headline { font-size: clamp(3.2rem, 13vw, 5rem); } }
+/* Public homepage presentation lives in obsidian.css. Admin/CMS styles remain independent. */

@@ -6,7 +6,7 @@
     "faviconUrl": "",
     "heroLayout": "imageRight",
     "profileImageShape": "rounded",
-    "enable3D": true,
+    "enable3D": false,
     "threeStyle": "torus",
     "skillsDisplayStyle": "cards",
     "navItems": [
@@ -21,19 +21,9 @@
         "href": "#about"
       },
       {
-        "id": "nav-3",
-        "label": "Education",
-        "href": "#education"
-      },
-      {
         "id": "nav-4",
         "label": "Skills",
         "href": "#skills"
-      },
-      {
-        "id": "nav-socials",
-        "label": "Social Media",
-        "href": "#socials"
       },
       {
         "id": "nav-5",
@@ -42,24 +32,24 @@
       }
     ],
     "theme": {
-      "primaryColor": "#b8ff45",
-      "secondaryColor": "#46f6c6",
-      "accentColor": "#b8ff45",
+      "primaryColor": "#c9d9e8",
+      "secondaryColor": "#aabaca",
+      "accentColor": "#c9d9e8",
       "lightMode": {
-        "background": "#f4f6ee",
+        "background": "#f4f5f6",
         "surface": "#ffffff",
-        "text": "#121a13",
-        "mutedText": "#59665a",
-        "border": "#d9e3d3"
+        "text": "#12161b",
+        "mutedText": "#636e77",
+        "border": "#d5dce2"
       },
       "darkMode": {
-        "background": "#080d0b",
-        "surface": "#101914",
-        "text": "#f4fff4",
-        "mutedText": "#a4b6a6",
-        "border": "#26392d"
+        "background": "#0b0e12",
+        "surface": "#151a20",
+        "text": "#f5f8fc",
+        "mutedText": "#aeb7bc",
+        "border": "#3b454d"
       },
-      "presetName": "NEXORA After Dark"
+      "presetName": "Obsidian Silver"
     },
     "socialsPageSettings": {
       "title": "Social Profiles & Connect",
@@ -81,7 +71,7 @@
     "tagline": "AI ENGINEER IN THE MAKING // CREATIVE CODE REBEL",
     "bio": "Information Technology student majoring in Artificial Intelligence at Macquarie University, exploring software engineering, intelligent systems and modern web development.",
     "district": "Sydney",
-    "profilePicture": "",
+    "profilePicture": "/images/nexora-portrait.png",
     "email": "",
     "phone": "",
     "address": "Sydney, Australia",
@@ -97,7 +87,7 @@
       {
         "id": "cta-2",
         "label": "THE BACKSTORY",
-        "href": "#education",
+        "href": "#about",
         "variant": "outline",
         "openNewTab": false
       }

@@ -62,7 +62,8 @@ interface CMSContextType {
 
 const CMSContext = createContext<CMSContextType | undefined>(undefined);
 
-const LOCAL_STORAGE_KEY = 'nexora_cms_data_v1';
+// Versioned cache: show the approved Obsidian Silver defaults instead of an old cached palette.
+const LOCAL_STORAGE_KEY = 'nexora_cms_data_v2';
 const THEME_MODE_KEY = 'nexora_theme_mode';
 const AUTH_TOKEN_KEY = 'nexora_admin_token';
 const AUTH_USER_KEY = 'nexora_admin_user';
@@ -119,7 +120,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       if (savedMode !== null) {
         return savedMode === 'dark';
       }
-      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      return true; // Obsidian Silver is a dark-first design; users may still switch themes.
     } catch {
       return false;
     }

@@ -1,6 +1,27 @@
 import { CMSData, SiteTheme } from './types';
 
 export const THEME_PRESETS: Record<string, SiteTheme> = {
+  // Approved Obsidian Silver homepage palette, editable through the CMS.
+  obsidian: {
+  'primaryColor': '#c9d9e8',
+  'secondaryColor': '#aabaca',
+  'accentColor': '#c9d9e8',
+  'lightMode': {
+    'background': '#f4f5f6',
+    'surface': '#ffffff',
+    'text': '#12161b',
+    'mutedText': '#636e77',
+    'border': '#d5dce2'
+  },
+  'darkMode': {
+    'background': '#0b0e12',
+    'surface': '#151a20',
+    'text': '#f5f8fc',
+    'mutedText': '#aeb7bc',
+    'border': '#3b454d'
+  },
+  'presetName': 'Obsidian Silver'
+},
   // Signature NEXORA palette: acid-lime contrast over a near-black canvas.
   nexora: {
     'primaryColor': '#b8ff45',
@@ -132,18 +153,16 @@ export const INITIAL_CMS_DATA: CMSData = {
     faviconUrl: '',
     heroLayout: 'imageRight',
     profileImageShape: 'rounded',
-    enable3D: true,
+    enable3D: false,
     threeStyle: 'torus',
     skillsDisplayStyle: 'cards',
     navItems: [
       { id: 'nav-1', label: 'Home', href: '#home' },
       { id: 'nav-2', label: 'About', href: '#about' },
-      { id: 'nav-3', label: 'Education', href: '#education' },
       { id: 'nav-4', label: 'Skills', href: '#skills' },
-      { id: 'nav-socials', label: 'Social Media', href: '#socials' },
       { id: 'nav-5', label: 'Contact', href: '#contact' },
     ],
-    theme: THEME_PRESETS.nexora,
+    theme: THEME_PRESETS.obsidian,
     socialsPageSettings: {
       title: 'Social Profiles & Connect',
       subtitle: 'Connect with me across all official platforms, coding repositories, and social channels.',
@@ -164,7 +183,7 @@ export const INITIAL_CMS_DATA: CMSData = {
     tagline: 'AI ENGINEER IN THE MAKING // CREATIVE CODE REBEL',
     bio: 'Information Technology student majoring in Artificial Intelligence at Macquarie University, exploring software engineering, intelligent systems and modern web development.',
     district: 'Sydney',
-    profilePicture: '',
+    profilePicture: '/images/nexora-portrait.png',
     email: '',
     phone: '',
     address: 'Sydney, Australia',
@@ -180,7 +199,7 @@ export const INITIAL_CMS_DATA: CMSData = {
       {
         id: 'cta-2',
         label: 'THE BACKSTORY',
-        href: '#education',
+        href: '#about',
         variant: 'outline',
         openNewTab: false,
       },
