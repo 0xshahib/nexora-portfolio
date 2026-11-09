@@ -63,7 +63,7 @@ interface CMSContextType {
 const CMSContext = createContext<CMSContextType | undefined>(undefined);
 
 // Versioned cache: show the approved Obsidian Silver defaults instead of an old cached palette.
-const LOCAL_STORAGE_KEY = 'nexora_cms_data_v3';
+const LOCAL_STORAGE_KEY = 'nexora_cms_data_v4';
 const THEME_MODE_KEY = 'nexora_theme_mode';
 const AUTH_TOKEN_KEY = 'nexora_admin_token';
 const AUTH_USER_KEY = 'nexora_admin_user';

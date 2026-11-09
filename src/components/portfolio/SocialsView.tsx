@@ -8,8 +8,8 @@ export const SocialsView: React.FC = () => {
   const { cmsData, navigateTo } = useCMS();
   const { siteSettings, socialPlatforms = [] } = cmsData;
   const pageSettings = siteSettings.socialsPageSettings || {
-    title: 'Social Profiles & Connect',
-    subtitle: 'Connect with me across all official platforms, coding repositories, and social channels.',
+    title: 'Professional Profiles',
+    subtitle: 'Explore my software projects, technical work, and professional experience.',
     layout: 'grid',
   };
 
@@ -17,7 +17,8 @@ export const SocialsView: React.FC = () => {
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   // Filter platforms that are enabled
-  const enabledPlatforms = socialPlatforms.filter((p) => p.enabled !== false);
+  // Hide personal channels and any profiles lacking a real destination.
+  const enabledPlatforms = socialPlatforms.filter((p) => p.enabled !== false && !!p.url && ['github', 'linkedin', 'kaggle', 'hugging face', 'google scholar', 'researchgate'].includes(p.name.trim().toLowerCase()));
 
   // Extract unique categories
   const categories = ['all', ...Array.from(new Set(enabledPlatforms.map((p) => p.category || 'Social').filter(Boolean)))];
@@ -70,7 +71,7 @@ export const SocialsView: React.FC = () => {
               }}
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Verified Platforms Hub</span>
+              <span>Professional Links</span>
             </div>
           </div>
 

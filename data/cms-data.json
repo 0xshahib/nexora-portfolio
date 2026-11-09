@@ -52,8 +52,8 @@
       "presetName": "Obsidian Silver"
     },
     "socialsPageSettings": {
-      "title": "Social Profiles & Connect",
-      "subtitle": "Connect with me across all official platforms, coding repositories, and social channels.",
+      "title": "Professional Profiles",
+      "subtitle": "Explore my software projects, technical work, and professional experience.",
       "layout": "grid"
     },
     "sectionsVisibility": {
@@ -202,79 +202,14 @@
       "id": "plat-1",
       "name": "GitHub",
       "handle": "@0xshahib",
-      "description": "Open source contributions, algorithms, web development projects, and repositories.",
+      "description": "Code repositories, software projects, and technical work.",
       "url": "https://github.com/0xshahib",
-      "pictureUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=400&q=80",
+      "pictureUrl": "",
       "buttonLabel": "View GitHub",
-      "badge": "Code Base",
-      "category": "Coding",
+      "badge": "Development",
+      "category": "Professional",
       "order": 1,
       "enabled": true
-    },
-    {
-      "id": "plat-2",
-      "name": "LinkedIn",
-      "handle": "",
-      "description": "Professional networking, CSE academic milestones, and engineering career updates.",
-      "url": "",
-      "pictureUrl": "https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=400&q=80",
-      "buttonLabel": "Connect on LinkedIn",
-      "badge": "Professional",
-      "category": "Career",
-      "order": 2,
-      "enabled": false
-    },
-    {
-      "id": "plat-3",
-      "name": "Facebook",
-      "handle": "",
-      "description": "Personal social updates, student community discussions, and direct messages.",
-      "url": "",
-      "pictureUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=400&q=80",
-      "buttonLabel": "Visit Facebook",
-      "badge": "Community",
-      "category": "Social",
-      "order": 3,
-      "enabled": false
-    },
-    {
-      "id": "plat-4",
-      "name": "Instagram",
-      "handle": "",
-      "description": "Behind the scenes, developer workspace snapshots, and student life moments.",
-      "url": "",
-      "pictureUrl": "https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=400&q=80",
-      "buttonLabel": "Follow on Instagram",
-      "badge": "Visuals",
-      "category": "Social",
-      "order": 4,
-      "enabled": false
-    },
-    {
-      "id": "plat-5",
-      "name": "YouTube",
-      "handle": "",
-      "description": "Tech experiments, project demos, coding tutorials, and walkthroughs.",
-      "url": "",
-      "pictureUrl": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=400&q=80",
-      "buttonLabel": "Watch Channel",
-      "badge": "Media",
-      "category": "Media",
-      "order": 5,
-      "enabled": false
-    },
-    {
-      "id": "plat-6",
-      "name": "X / Twitter",
-      "handle": "",
-      "description": "Real-time tech thoughts, tech news, web development tips, and discussions.",
-      "url": "",
-      "pictureUrl": "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=400&q=80",
-      "buttonLabel": "Follow on X",
-      "badge": "Feed",
-      "category": "Social",
-      "order": 6,
-      "enabled": false
     }
   ],
   "adminAuthSettings": {

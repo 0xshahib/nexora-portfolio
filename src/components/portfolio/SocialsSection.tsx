@@ -17,10 +17,11 @@ export const SocialsSection: React.FC = () => {
 
   if (!isVisible) return null;
 
-  const enabledPlatforms = socialPlatforms.filter((p) => p.enabled !== false);
+  // Only display professional profiles with a configured destination.
+  const enabledPlatforms = socialPlatforms.filter((p) => p.enabled !== false && !!p.url && ['github', 'linkedin', 'kaggle', 'hugging face', 'google scholar', 'researchgate'].includes(p.name.trim().toLowerCase()));
   const pageSettings = siteSettings.socialsPageSettings || {
-    title: 'Social Media & Networks',
-    subtitle: 'Connect with me directly across all official channels, social profiles, and networks.',
+    title: 'Professional Profiles',
+    subtitle: 'Explore my software projects and professional work.',
     layout: 'grid',
   };
 
@@ -61,7 +62,7 @@ export const SocialsSection: React.FC = () => {
               }}
             >
               <Share2 className="w-3.5 h-3.5" />
-              <span>Connect Everywhere</span>
+              <span>Professional Network</span>
             </div>
 
             <h2
@@ -69,7 +70,7 @@ export const SocialsSection: React.FC = () => {
               className="text-3xl sm:text-4xl font-extrabold tracking-tight"
               style={{ color: 'var(--color-text)' }}
             >
-              {pageSettings.title || 'Social Media & Channels'}
+              {pageSettings.title || 'Professional Profiles'}
             </h2>
 
             <p
@@ -78,7 +79,7 @@ export const SocialsSection: React.FC = () => {
               style={{ color: 'var(--color-muted)' }}
             >
               {pageSettings.subtitle ||
-                'Find and follow me on my official profiles, development logs, and social communities.'}
+                'Explore my software projects and professional work.'}
             </p>
           </div>
 
@@ -93,7 +94,7 @@ export const SocialsSection: React.FC = () => {
               color: 'var(--color-text)',
             }}
           >
-            <span>Open Dedicated Socials Hub</span>
+            <span>Explore Professional Links</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </motion.div>
