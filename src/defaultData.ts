@@ -230,6 +230,12 @@ export const INITIAL_CMS_DATA: CMSData = {
     { id: 'skill-3', name: 'Python', category: 'Programming Language', proficiency: 85, order: 3 },
     { id: 'skill-4', name: 'HTML', category: 'Web Development', proficiency: 95, order: 4 },
     { id: 'skill-5', name: 'CSS', category: 'Web Development', proficiency: 90, order: 5 },
+    // Learning-stage AI topics are intentionally unscored; no invented proficiency claims.
+    { id: 'skill-ai-ml', name: 'Machine Learning Foundations', category: 'AI & Machine Learning', proficiency: 0, order: 6 },
+    { id: 'skill-ai-cv', name: 'Computer Vision (Learning)', category: 'AI & Machine Learning', proficiency: 0, order: 7 },
+    { id: 'skill-ai-nn', name: 'Neural Networks (Learning)', category: 'AI & Machine Learning', proficiency: 0, order: 8 },
+    { id: 'skill-ai-data', name: 'NumPy & Pandas (Learning)', category: 'AI Tools & Data', proficiency: 0, order: 9 },
+    { id: 'skill-ai-notebooks', name: 'Jupyter Notebook & Colab', category: 'AI Tools & Data', proficiency: 0, order: 10 },
   ],
   languages: [
     { id: 'lang-1', name: 'Bengali', proficiency: 'Native', order: 1 },

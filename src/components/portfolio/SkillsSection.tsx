@@ -12,13 +12,14 @@ export const SkillsSection: React.FC = () => {
   const { skills, siteSettings } = cmsData;
   const { skillsDisplayStyle = 'cards', sectionsVisibility } = siteSettings;
 
+  // Keep hooks unconditional so CMS updates cannot change hook call order.
+  const [activeCategory, setActiveCategory] = useState<string>('All');
   if (!sectionsVisibility.skills || !skills || skills.length === 0) {
     return null;
   }
 
-  // Extract unique categories for optional filter tabs
+  // Categories are derived from CMS data, including learning-stage AI topics.
   const categories = Array.from(new Set(skills.map((s) => s.category || 'General')));
-  const [activeCategory, setActiveCategory] = useState<string>('All');
 
   const filteredSkills =
     activeCategory === 'All'
@@ -52,6 +53,9 @@ export const SkillsSection: React.FC = () => {
               >
                 Technical Skills
               </h2>
+              <p className="text-sm mt-2 max-w-xl" style={{ color: 'var(--color-muted)' }}>
+                Programming, web development, and the AI subjects I’m currently exploring through my studies.
+              </p>
             </div>
 
             {/* Category Filter Pills (if multiple categories exist) */}
@@ -66,7 +70,7 @@ export const SkillsSection: React.FC = () => {
                       activeCategory === 'All'
                         ? 'var(--color-primary)'
                         : 'var(--color-surface)',
-                    color: activeCategory === 'All' ? '#ffffff' : 'var(--color-muted)',
+                    color: activeCategory === 'All' ? '#0b1210' : 'var(--color-muted)',
                     border: `1px solid var(--color-border)`,
                   }}
                 >
@@ -83,7 +87,7 @@ export const SkillsSection: React.FC = () => {
                         activeCategory === cat
                           ? 'var(--color-primary)'
                           : 'var(--color-surface)',
-                      color: activeCategory === cat ? '#ffffff' : 'var(--color-muted)',
+                      color: activeCategory === cat ? '#0b1210' : 'var(--color-muted)',
                       border: `1px solid var(--color-border)`,
                     }}
                   >
@@ -128,6 +132,12 @@ export const SkillsSection: React.FC = () => {
                     >
                       {skill.name}
                     </h3>
+                    {(!skill.proficiency || skill.proficiency <= 0) && (
+                      <span className="inline-flex items-center mt-2 px-2 py-1 rounded-md text-[10px] font-semibold tracking-wide uppercase"
+                        style={{ color: 'var(--color-primary)', backgroundColor: 'color-mix(in srgb, var(--color-primary) 12%, transparent)', border: '1px solid var(--color-border)' }}>
+                        Currently learning
+                      </span>
+                    )}
                   </div>
 
                   {typeof skill.proficiency === 'number' && skill.proficiency > 0 && (
@@ -190,13 +200,13 @@ export const SkillsSection: React.FC = () => {
                         ({skill.category})
                       </span>
                     </div>
-                    {typeof skill.proficiency === 'number' && (
+                    {typeof skill.proficiency === 'number' && skill.proficiency > 0 && (
                       <span className="text-xs font-bold" style={{ color: 'var(--color-primary)' }}>
                         {skill.proficiency}%
                       </span>
                     )}
                   </div>
-                  <div
+                  {skill.proficiency > 0 ? (<div
                     className="w-full h-2 rounded-full overflow-hidden"
                     style={{
                       backgroundColor: `color-mix(in srgb, var(--color-border) 70%, transparent)`,
@@ -205,11 +215,11 @@ export const SkillsSection: React.FC = () => {
                     <div
                       className="h-full rounded-full"
                       style={{
-                        width: `${skill.proficiency || 80}%`,
+                        width: `${skill.proficiency}%`,
                         backgroundColor: 'var(--color-primary)',
                       }}
                     />
-                  </div>
+                  </div>) : <p className="text-xs mt-1" style={{ color: 'var(--color-muted)' }}>Currently learning</p>}
                 </motion.div>
               ))}
             </div>
@@ -238,6 +248,7 @@ export const SkillsSection: React.FC = () => {
                   }}
                 >
                   <span>{skill.name}</span>
+                  {(!skill.proficiency || skill.proficiency <= 0) && <span className="text-xs opacity-70">· Learning</span>}
                   {typeof skill.proficiency === 'number' && skill.proficiency > 0 && (
                     <span
                       className="text-xs px-1.5 py-0.5 rounded-md font-mono"
